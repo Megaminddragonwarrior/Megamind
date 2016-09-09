@@ -1,0 +1,35 @@
+for launching server:
+   java Servername portNo.(90)
+
+for Connecting on localhost:
+		java connectiongprogram localhost portno.(90)
+for connecting to Remote
+		java ConnectingProgram  IpAddress Portno.
+
+for retrieve data
+>>>>>>>>>>>>>>>>>>>>>>
+
+public void showalldetails()
+{
+con=getconn();
+st=con.createstatement();
+string query="select *from table";
+rs=st.executeQuery(query);
+while(rs.next())
+{
+sop("Id "+rs.getInt(1));
+sop("name "+rs.getString(2);
+sop("name"+rs.getString(3);
+}
+
+
+
+
+public boolean getsingle data(stream id)
+{
+con=getconn();
+st=con.createstatement();
+string query="select *from table where id="+id+"";
+rs=st.executeQuery(query);
+return rs.now();
+}
